@@ -6,7 +6,15 @@ English Ivy Ideal Habitat Suitability Analysis
 Description
 -----------
 English Ivy is an exotic invasive plant brought to the US as an ornamental ivy but has aggressively spread
-beyond its decorative purpose to choke out native species, create ivy deserts, and damage property and entire ecosystems. 
+beyond its decorative purpose to choke out native species, create ivy deserts, and damage property and entire ecosystems.
+
+-------
+Web Map 
+-------
+A web map was created using QGIS Desktop and the QGIS2Leaf extension.
+It can be viewed here:
+
+`Web Map<http://bradhamson.github.io/English-Ivy-Ideal-Habitat-Suitability-Analysis/#13/39.3109/-76.6206>`_
 
 -------
 Purpose
