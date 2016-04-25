@@ -5,11 +5,14 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
 		<link rel="stylesheet" type="text/css" href="css/own_style.css">
+		<link rel="stylesheet" href="node_modules/leaflet-zoombox/L.Control.ZoomBox.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 		<script src="js/leaflet-hash.js"></script>
 		<script src="js/Autolinker.min.js"></script>
+		<script src="node_modules/leaflet-zoombox/L.Control.ZoomBox.min.js"></script>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	</head>
 	<body>
@@ -100,6 +103,9 @@
 		};
 
 		legend.addTo(map);
+
+		var control = L.control.zoomBox({modal: false ,position: 'topleft', className: 'fa fa-crop'});
+		map.addControl(control);
 	</script>
 </body>
 </html>
