@@ -14,7 +14,7 @@ Web Map
 A web map was created using QGIS Desktop and the QGIS2Leaf extension.
 It can be viewed here:
 
-`Web Map <http://bradhamson.github.io/English-Ivy-Ideal-Habitat-Suitability-Analysis/#12/39.2909/-76.5986>`_.
+`Web Map <http://bradhamson.github.io/English-Ivy-Ideal-Habitat-Suitability-Analysis/#12/39.2871/-76.6109>`_
 
 -------
 Purpose
@@ -79,7 +79,7 @@ Data Sources
 * MD Imap - Baltimore DEM
 * Baltimore City - Boundary, Green Spaces, Roadways
 * USDA - Mid Atlantic Soils
-Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. Web Soil Survey. `Available online at http://websoilsurvey.nrcs.usda.gov/`_. Accessed [4/22/2016].
+Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. Web Soil Survey. `Available online at http://websoilsurvey.nrcs.usda.gov/`. Accessed [4/22/2016].
 
 -------
 Contact
