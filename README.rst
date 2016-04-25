@@ -84,10 +84,7 @@ Soil Survey Staff, Natural Resources Conservation Service, United States Departm
 -------
 Contact
 -------
-* Stephanie Helms - Baltimore City Invasive Species Program Coordinator
 * Brad Hamson - GIS Analyst/Developer
-
-* stephaniem.helms@gmail.com
 * brad.hamson@gmail.com
 
 -------
