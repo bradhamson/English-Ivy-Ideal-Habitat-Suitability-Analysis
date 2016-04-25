@@ -23,10 +23,11 @@ the MD state government, USGS, and the Baltimore city government.
 In order to proceed a model of the ideal habitat was created:
 
 Ideal Habitat:
-*Within 50ft of edge areas 
-*Soil is not extremely wet
-*Slightly sunny to shady light
-*Surrounded by deciduous trees
+
+* Within 50ft of edge areas 
+* Soil is not extremely wet
+* Slightly sunny to shady light
+* Surrounded by deciduous trees
 
 Due to the number of datasources and their disparate schemas, normalization was necessary. This process
 was automated using Python scripts and Raster reclassification.
@@ -35,6 +36,7 @@ A Fuzzy Overlay Analysis was used to discover areas ideal habitats since the iva
 
 First an Aspect surface was generated using the 1m DEM. This was then reclassified to highlight shady and slightly sunny areas (North and North East facing).
 Next a surface was generated higlighting areas within 50ft of paved roadways using the Euclidean Distance Tool.
+After this the STATSGO Soils Coverage was converted 
 
 -------
 Results
@@ -44,19 +46,19 @@ Results
 Data Sources
 ------------
 
-*MD Imap - Baltiore DEM
-*Baltimore City - Boundary, Green Spaces, Roadways
-*USDA - Mid Atlantic Soils
+* MD Imap - Baltiore DEM
+* Baltimore City - Boundary, Green Spaces, Roadways
+* USDA - Mid Atlantic Soils
 Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. Web Soil Survey. `Available online at http://websoilsurvey.nrcs.usda.gov/`_. Accessed [4/22/2016].
 
 -------
 Contact
 -------
-Stephanie Helms - Baltimore City Invasive Species Program Coordinator
-Brad Hamson - GIS Analys/Developer
+* Stephanie Helms - Baltimore City Invasive Species Program Coordinator
+* Brad Hamson - GIS Analys/Developer
 
-stephaniem.helms@gmail.com
-brad.hamson@gmail.com
+* stephaniem.helms@gmail.com
+* brad.hamson@gmail.com
 
 -------
 Licence
