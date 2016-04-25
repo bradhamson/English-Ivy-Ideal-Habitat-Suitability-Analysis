@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
 		<link rel="stylesheet" type="text/css" href="css/own_style.css">
 		<link rel="stylesheet" href="node_modules/leaflet-zoombox/L.Control.ZoomBox.css" />
+		<link rel="stylesheet" href="node_modules/leaflet-sidebar/src/L.Control.Sidebar.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -13,11 +14,15 @@
 		<script src="js/leaflet-hash.js"></script>
 		<script src="js/Autolinker.min.js"></script>
 		<script src="node_modules/leaflet-zoombox/L.Control.ZoomBox.min.js"></script>
+		<script src="node_modules/leaflet-sidebar/src/L.Control.Sidebar.js"></script>
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	</head>
 	<body>
 		<div id="map"></div>
 		<input id="slide" type="range" min="0" max="1" step="0.1" value="1" onchange="updateOpacity(this.value)">
+		<div id="sidebar">
+    		<h2>English Ivy Habitat Suitability Analysis</h2>
+		</div>
 		<style type="text/css">
 		.legend {
 			position: relative;
@@ -58,6 +63,10 @@
 
 		feature_group.addTo(map);
 
+		setTimeout(function () {
+			sidebar.show();
+		}, 500);
+
 		function getColor(d) {
 			if (d == 'Less Suitable') {
 				return '#5EAE4C'
@@ -91,7 +100,10 @@
 		legend.addTo(map);
 
 		var control = L.control.zoomBox({modal: false, position: 'topleft', className: 'fa fa-crop'});
-		control.addTo(map)
+		control.addTo(map);
+
+		var sidebar = L.control.sidebar('sidebar', {position: 'left'});
+		sidebar.addTo(map);
 	</script>
 </body>
 </html>
