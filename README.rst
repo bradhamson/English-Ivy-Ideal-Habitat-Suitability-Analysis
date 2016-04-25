@@ -11,7 +11,7 @@ beyond its decorative purpose to choke out native species, create ivy deserts, a
 -------
 Web Map 
 -------
-A web map was created using QGIS Desktop and the QGIS2Leaf extension.
+A web map was created using QGIS Desktop and the QGIS2Leaf extension to create the boilerplate code, then modified.
 It can be viewed here:
 
 `Web Map <http://bradhamson.github.io/English-Ivy-Ideal-Habitat-Suitability-Analysis/#12/39.2856/-76.6023>`_
