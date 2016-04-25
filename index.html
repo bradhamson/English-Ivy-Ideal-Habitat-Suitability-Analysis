@@ -47,7 +47,7 @@
 	var baseMaps = {
 		'Stamen Terrain': basemap_0
 	};
-		L.control.layers(baseMaps,{"Likely English Ivy Sites": overlay_IdealHabintrend},{collapsed:false}).addTo(map);
+		L.control.layers(baseMaps,{"Likely English Ivy Sites": overlay_IdealHabintrend},{collapsed:false}).addTo(map).setPosition('bottomright');
 		function updateOpacity(value) {
 		
 							overlay_IdealHabintrend.setOpacity(value)}
