@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
 		<link rel="stylesheet" type="text/css" href="css/own_style.css">
-		
+
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 		<script src="js/leaflet-hash.js"></script>
@@ -15,9 +15,30 @@
 	<body>
 		<div id="map"></div>
 		<input id="slide" type="range" min="0" max="1" step="0.1" value="1" onchange="updateOpacity(this.value)">
+		<style type="text/css">
+		.legend {
+			position: relative;
+			width: 125px;
+			height: 100px;
+			line-height: 18px;
+		}
+
+		.legend i {
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			float: left;
+			margin-right: 8px;
+			opacity: 0.7;
+		}
+
+		.legend b {
+			margin-left: 25px;
+		}
+		</style>
 		<script>
 		var map = L.map('map', {
-			zoomControl:true, maxZoom:19
+			zoomControl:true, maxZoom:16, minZoom:12
 		}).fitBounds([[39.1908641736,-76.7436694235],[39.3791642546,-76.4952148958]]);
 		var hash = new L.Hash(map);
 		var additional_attrib = 'created w. <a href="https://github.com/geolicious/qgis2leaf" target ="_blank">qgis2leaf</a> by <a href="http://www.geolicious.de" target ="_blank">Geolicious</a> & contributors<br>';
@@ -33,24 +54,52 @@
 		raster_group.addLayer(overlay_IdealHabintrend);
 
 		feature_group.addTo(map);
-		var title = new L.Control();
-		title.onAdd = function (map) {
-			this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+
+		function getColor(d) {
+			if (d == 'Less Suitable') {
+				return '#5EAE4C'
+			} else if (d == 'Suitable') {
+				return '#DADB65'
+			} else if (d == 'Most Suitable') {
+				return '#DB6565'
+			} else {
+				return '#000000'
+			}
+		};
+
+		var title = L.control();
+
+		title.onAdd = function(map) {
+			this._div = L.DomUtil.create('div', 'info');
 			this.update();
 			return this._div;
 		};
-		title.update = function () {
-			this._div.innerHTML = '<h2>English Ivy Ideal Habitat Suitability Analysis</h2>'
+
+		title.update = function() {
+			this._div.innerHTML = '<h3>English Ivy Habitat Suitability Analysis</h3>'
 		};
+
 		title.addTo(map);
-	var baseMaps = {
-		'Stamen Terrain': basemap_0
-	};
-		L.control.layers(baseMaps,{"Likely English Ivy Sites": overlay_IdealHabintrend},{collapsed:false}).addTo(map).setPosition('bottomright');
-		function updateOpacity(value) {
-		
-							overlay_IdealHabintrend.setOpacity(value)}
-		L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
+
+		var legend = L.control({position: 'bottomright'}, {collapsed: true});
+
+		legend.onAdd = function(map) {
+			var div = L.DomUtil.create('div', 'info legend'),
+					  grades = ['Less Suitable', 'Suitable', 'Most Suitable'],
+					  labels = ['<strong>Site Suitability</strong><br><ln>'],
+					  from, to;
+
+			for (var i = 0; i < grades.length; i++) {
+				from = grades[i];
+				to = grades[i+1];
+
+				labels.push('<i style="background:' + getColor(from) + '"></i>' + '<b>'+from+'</b>');
+			};
+			div.innerHTML = labels.join('<br>');
+			return div;
+		};
+
+		legend.addTo(map);
 	</script>
 </body>
 </html>
