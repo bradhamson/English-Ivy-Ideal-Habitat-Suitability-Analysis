@@ -5,14 +5,14 @@ English Ivy Ideal Habitat Suitability Analysis
 -----------
 Description
 -----------
-English Ivy is an exotic invasive plant brought to the US as an ornamental ivy but has aggressivly spread
-beyond its decrative purpose to choke out native species, create ivy deserts, and damage property and entire ecosystems. 
+English Ivy is an exotic invasive plant brought to the US as an ornamental ivy but has aggressively spread
+beyond its decorative purpose to choke out native species, create ivy deserts, and damage property and entire ecosystems. 
 
 -------
 Purpose
 -------
 This English Ivy Ideal Habitat Suitability Analysis seeks to identify areas within Baltimore, MD that may be ideal
-english ivy habitats in order to create target areas for invasive removal efforts.
+English Ivy habitats in order to create target areas for invasive removal efforts.
 
 ------
 Method
@@ -29,24 +29,39 @@ Ideal Habitat:
 * Slightly sunny to shady light
 * Surrounded by deciduous trees
 
-Due to the number of datasources and their disparate schemas, normalization was necessary. This process
+Due to the number of data sources and their disparate schemas, normalization was necessary. This process
 was automated using Python scripts and Raster reclassification.
 
-A Fuzzy Overlay Analysis was used to discover areas ideal habitats since the ivasive species are not contained by discrete boundaries.
+A Fuzzy Overlay Analysis was used to discover areas ideal habitats since the invasive species are not contained by discrete boundaries.
 
 First an Aspect surface was generated using the 1m DEM. This was then reclassified to highlight shady and slightly sunny areas (North and North East facing).
-Next a surface was generated higlighting areas within 50ft of paved roadways using the Euclidean Distance Tool.
-After this the STATSGO Soils Coverage was converted 
+Next a surface was generated highlighting areas within 50ft of paved roadways using the Euclidean Distance Tool.
+After this values representing drainage were calculated from related tables in the STATSGO Soil Data and rasterized, then reclassified.
+A surface measuring distance from green spaces was also created using the Euclidean Distance Tool, then reclassified.
+
+The reclassified surfaces were then assigned membership using the Fuzzy Membership tool using the following types:
+
+* Streets: NEAR
+* Soils: SMALL
+* Aspect: SMALL
+* Green Spaces: SMALL
+
+Finally, a Fuzzy Overlay surface was created using the Fuzzy Overlay Tool and the PRODUCT overlay type.
+
+The results of this analysis were then vectorized.
 
 -------
 Results
 -------
 
+Results have not yet been field verified, but an initial observation has proven them to be mostly true. As demonstrated in the data, the most likely 
+areas to foster English Ivy are near impervious roadways, near green spaces, in areas with slight exposure to light and soil moisture content.
+
 ------------
 Data Sources
 ------------
 
-* MD Imap - Baltiore DEM
+* MD Imap - Baltimore DEM
 * Baltimore City - Boundary, Green Spaces, Roadways
 * USDA - Mid Atlantic Soils
 Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. Web Soil Survey. `Available online at http://websoilsurvey.nrcs.usda.gov/`_. Accessed [4/22/2016].
@@ -55,7 +70,7 @@ Soil Survey Staff, Natural Resources Conservation Service, United States Departm
 Contact
 -------
 * Stephanie Helms - Baltimore City Invasive Species Program Coordinator
-* Brad Hamson - GIS Analys/Developer
+* Brad Hamson - GIS Analyst/Developer
 
 * stephaniem.helms@gmail.com
 * brad.hamson@gmail.com
