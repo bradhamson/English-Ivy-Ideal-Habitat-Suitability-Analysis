@@ -22,6 +22,93 @@
 		<input id="slide" type="range" min="0" max="1" step="0.1" value="1" onchange="updateOpacity(this.value)">
 		<div id="sidebar">
     		<h2>English Ivy Habitat Suitability Analysis</h2>
+    		<ul class="nar_nav">
+	    		<li><a href="https://github.com/bradhamson/English-Ivy-Ideal-Habitat-Suitability-Analysis"><strong>Back to Project</strong></a></li>
+	    		<li><a href="https://github.com/bradhamson"><strong>Github</strong></a></li>
+	    		<li><a href="mailto:brad.hamson@gmail.com"><strong>Contact</strong></a></li>
+    		</ul>
+			<h3>Description</h3>
+			<p>
+				English Ivy is an exotic invasive plant brought to the US as an ornamental ivy but has aggressively spread
+				beyond its decorative purpose to choke out native species, create ivy deserts, and damage property and entire ecosystems.
+			</p>
+			<h3>Purpose</h3>
+			<p>
+				This English Ivy Ideal Habitat Suitability Analysis seeks to identify areas within Baltimore, MD that may be ideal
+				English Ivy habitats in order to create target areas for invasive removal efforts.
+			</p>
+			<h3>Method</h3>
+			<p>
+				<h4>Software used</h4>
+				<ul>
+					<li>Arcmap - Spatial Analyst Tools (Reclassify, Euclidean Distance, Fuzzy Membership, Fuzzy Overlay)</li>
+					<li>QGIS Desktop 2.8.1</li>
+					<li>Python 2.7, Leaflet.js, leaflet-zoombox, leaflet-sidebar</li>
+				</ul>
+				Data was collected from a variety of sources to create the necessary surfaces to perform this analysis. These include
+				the MD state government, USGS, and the Baltimore city government. 
+			</p>
+			<p>
+				In order to proceed a model of the ideal habitat was created:
+
+				<h4>Ideal Habitat for Site Selection</h4>
+				<ul>
+					<li>Within 50ft of edge areas</li> 
+				 	<li>Soil is not extremely wet</li>
+					<li>Slightly sunny to shady light</li>
+					<li>Surrounded by deciduous trees</li>
+				</ul>
+			</p>
+			<p>
+				Due to the number of data sources and their disparate schemas, normalization was necessary. This process
+				was automated using Python scripts and Raster reclassification.
+			</p>
+				A Fuzzy Overlay Analysis was used to discover ideal habitats since the invasive species are not contained by discrete boundaries.
+				Additionally this method can also highlight areas of varying suitability; providing a spectrum of ideal habitats and target areas.
+			<p>
+				First an Aspect surface was generated using the 1m DEM. This was then reclassified to highlight shady and slightly sunny areas (North and North East facing).
+				Next a surface was generated highlighting areas within 50ft of paved roadways using the Euclidean Distance Tool.
+				After this values representing drainage were calculated from related tables in the STATSGO Soil Data and rasterized, then reclassified.
+				A surface measuring distance from green spaces was also created using the Euclidean Distance Tool, then reclassified.
+			</p>
+			<p>
+				The reclassified surfaces were then assigned membership using the Fuzzy Membership tool using the following types:
+				<ul>
+					<li>Streets: NEAR</li>
+					<li>Soils: SMALL</li>
+					<li>Aspect: SMALL</li>
+					<li>Green Spaces: SMALL</li>
+				</ul>
+				Finally, a Fuzzy Overlay surface was created using the Fuzzy Overlay Tool and the AND overlay type.
+			</p>
+
+			<h3>Results</h3>
+			<p>
+			Results have not yet been field verified, but an initial observation has proven them to be mostly true. As demonstrated in the data, the most likely 
+			areas to foster English Ivy are near impervious roadways, near green spaces, in areas with slight exposure to light and soil moisture content.
+			</p>
+
+			<h3>Data Sources</h3>
+			<p>
+				<ul>
+					<li>MD Imap - Baltimore DEM</li>
+					<li>Baltimore City - Boundary, Green Spaces, Roadways</li>
+					<li>USDA - Mid Atlantic Soils</li>
+				</ul>
+
+				Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. Web Soil Survey. Available online <a href="http://websoilsurvey.nrcs.usda.gov/">here</a> Accessed [4/22/2016].
+			</p>
+
+			<h3>Contact</h3>
+			<p>
+				<ul>
+					<li>Stephanie Helms - Baltimore City Invasive Species Program Coordinator</li>
+					<li>Brad Hamson - GIS Analyst/Developer</li>
+				</ul>
+				<ul>
+					<li><a href="mailto:stephaniem.helms@gmail.com">stephaniem.helms@gmail.com</a></li>
+					<li><a href="brad.hamson@gmail.com">brad.hamson@gmail.com</a></li>
+				</ul>
 		</div>
 		<style type="text/css">
 		.legend {
@@ -42,6 +129,17 @@
 
 		.legend b {
 			margin-left: 25px;
+		}
+
+		.nar_nav li{
+			display:inline;
+  			vertical-align:middle;
+  			line-height:35px;
+  			margin-right: 50px;
+		}
+
+		.nar_nav a{
+			text-decoration: none;
 		}
 		</style>
 		<script>
