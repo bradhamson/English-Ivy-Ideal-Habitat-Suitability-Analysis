@@ -2,4 +2,5 @@ EI_Hab_Model_Outline.txt
 
 Data/Sources
 Data/Working_Data.gdb/
-Data/Data.gdb/
+Data/Data.gdb
+*.qgs

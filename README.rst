@@ -17,6 +17,11 @@ English Ivy habitats in order to create target areas for invasive removal effort
 ------
 Method
 ------
+Software used:
+* Arcmap - Spatial Analyst Tools (Reclassify, Euclidean Distance, Fuzzy Membership, Fuzzy Overlay)
+* QGIS Desktop 2.8.1
+* Python 2.7
+
 Data was collected from a variety of sources to create the necessary surfaces to perform this analysis. These include
 the MD state government, USGS, and the Baltimore city government. 
 
@@ -32,7 +37,8 @@ Ideal Habitat:
 Due to the number of data sources and their disparate schemas, normalization was necessary. This process
 was automated using Python scripts and Raster reclassification.
 
-A Fuzzy Overlay Analysis was used to discover areas ideal habitats since the invasive species are not contained by discrete boundaries.
+A Fuzzy Overlay Analysis was used to discover ideal habitats since the invasive species are not contained by discrete boundaries.
+Additionally this method can also highlight areas of varying suitability; providing a spectrum of ideal habitats and target areas.
 
 First an Aspect surface was generated using the 1m DEM. This was then reclassified to highlight shady and slightly sunny areas (North and North East facing).
 Next a surface was generated highlighting areas within 50ft of paved roadways using the Euclidean Distance Tool.
@@ -46,9 +52,7 @@ The reclassified surfaces were then assigned membership using the Fuzzy Membersh
 * Aspect: SMALL
 * Green Spaces: SMALL
 
-Finally, a Fuzzy Overlay surface was created using the Fuzzy Overlay Tool and the PRODUCT overlay type.
-
-The results of this analysis were then vectorized.
+Finally, a Fuzzy Overlay surface was created using the Fuzzy Overlay Tool and the AND overlay type.
 
 -------
 Results
@@ -56,6 +60,8 @@ Results
 
 Results have not yet been field verified, but an initial observation has proven them to be mostly true. As demonstrated in the data, the most likely 
 areas to foster English Ivy are near impervious roadways, near green spaces, in areas with slight exposure to light and soil moisture content.
+
+.. image:: img/SiteSelection.png
 
 ------------
 Data Sources
