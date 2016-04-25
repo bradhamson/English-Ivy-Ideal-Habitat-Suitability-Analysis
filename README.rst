@@ -18,6 +18,7 @@ English Ivy habitats in order to create target areas for invasive removal effort
 Method
 ------
 Software used:
+
 * Arcmap - Spatial Analyst Tools (Reclassify, Euclidean Distance, Fuzzy Membership, Fuzzy Overlay)
 * QGIS Desktop 2.8.1
 * Python 2.7
