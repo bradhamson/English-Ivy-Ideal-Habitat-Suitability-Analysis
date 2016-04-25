@@ -14,7 +14,7 @@ Web Map
 A web map was created using QGIS Desktop and the QGIS2Leaf extension.
 It can be viewed here:
 
-`Web Map <http://bradhamson.github.io/English-Ivy-Ideal-Habitat-Suitability-Analysis/#12/39.2871/-76.6109>`_
+`Web Map <http://bradhamson.github.io/English-Ivy-Ideal-Habitat-Suitability-Analysis/#12/39.2856/-76.6023>`_
 
 -------
 Purpose
