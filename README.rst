@@ -19,8 +19,7 @@ It can be viewed here:
 -------
 Purpose
 -------
-This English Ivy Ideal Habitat Suitability Analysis seeks to identify areas within Baltimore, MD that may be ideal
-English Ivy habitats in order to create target areas for invasive removal efforts.
+This English Ivy Ideal Habitat Suitability Analysis seeks to select sites within Baltimore, MD that may be ideal English Ivy habitats and meet the criteria for target areas for invasive removal efforts.
 
 ------
 Method
@@ -34,9 +33,9 @@ Software used:
 Data was collected from a variety of sources to create the necessary surfaces to perform this analysis. These include
 the MD state government, USGS, and the Baltimore city government. 
 
-In order to proceed a model of the ideal habitat was created:
+In order to proceed a model of the ideal habitat and target area was created:
 
-Ideal Habitat:
+Criteria for Site Selection:
 
 * Within 50ft of edge areas 
 * Soil is not extremely wet
@@ -67,8 +66,7 @@ Finally, a Fuzzy Overlay surface was created using the Fuzzy Overlay Tool and th
 Results
 -------
 
-Results have not yet been field verified, but an initial observation has proven them to be mostly true. As demonstrated in the data, the most likely 
-areas to foster English Ivy are near impervious roadways, near green spaces, in areas with slight exposure to light and soil moisture content.
+Results have not yet been field verified, but an initial observation has proven them to be mostly true. As demonstrated in the data, the most likely areas to foster English Ivy are near green spaces, in areas with slight exposure to light, and moderate soil moisture content. Additionally these sites meet the criteria for target areas to be within 50ft of edge areas.
 
 .. image:: img/SiteSelection.png
 
