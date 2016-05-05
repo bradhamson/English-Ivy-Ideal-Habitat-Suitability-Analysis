@@ -46,7 +46,7 @@ The script performs the following actions:
 ---
 Use
 ---
-To use the script first download the Baltimore 1 meter DEM ``here <https://www.dropbox.com/s/j7x2ips8donvpd2/BaltimoreCity_DEM_2015_0.7m.7z?dl=0>``_
+To use the script first download the Baltimore 1 meter DEM `here <https://www.dropbox.com/s/j7x2ips8donvpd2/BaltimoreCity_DEM_2015_0.7m.7z?dl=0>`_
 and place it in the ``Data/Sources`` directory.
 
 Then run the script from your shell and enter the source path when prompted.
