@@ -1,0 +1,284 @@
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>Sanborn Map Company</origin>
+				<pubdate>Unpublished Material</pubdate>
+				<title Sync="TRUE">Hydrofeature</title>
+				<geoform Sync="TRUE">vector digital data</geoform>
+				<othercit>This dataset was developed through project number 1051 supervised by the City of Baltimore DPW.  Planimetric data was captured to American Society of Photogrammetry and Remote Sensing (ASPRS) Class I Accuracy Standards for 1"= 40' scale maps for area within the City and for the outfall alignment and Back River Wastewater treatment plant and to ASPRS Class I Accuracy standards for 1"=100' scale maps with 2' contours  for the LochRaven reservoir.  Planimetric / topographic data based on 2008 aerial photography.   Note that selected areas involved the production of 1' contours (Patapsaco Wastewater Treatment Plan) and the outfall alignment.
+
+Project 831 (2/2001 - 6/2003) involved update and new planimetric and topographic mapping.</othercit>
+				<onlink Sync="TRUE">\\Balt-gis01-srv\geodev\Data_Distribution\Web_Data\shp\water</onlink>
+				<ftname Sync="TRUE">Hydrofeature</ftname></citeinfo>
+		</citation>
+		<descript>
+			<abstract>This dataset represents photogrammetrically captured hydrography including hidden hydrography used to provide continuous topology.  Feature capture rules: 
+
+Waterbodies (lakes, ponds, harbors) - Compile all ponds and lakes, including stormwater drainage ponds &gt; ¼ acre as waterbodies.  Does not include swamps or wetlands unless completely interspersed with water. Areas not visible shall be identified as hidden. 
+
+Waterways (Streams, ditches) - Compile all stream, ditches, rivers, and harbors &gt; 5' in width as waterways. Both banks of the stream shall be digitized and formed into a polygon. Areas not visible shall be identified as hidden. 
+
+Reservoirs - Compile all reservoirs &gt; ¼ acre as reservoirs. Areas not visible shall be identified as hidden.  Includes area of reservoir being embanked.</abstract>
+			<purpose>This data was created as a landbase feature as part of the planimetric data.</purpose>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<sngdate>
+					<caldate>March 17, 2008</caldate>
+				</sngdate>
+			</timeinfo>
+			<current>publication date</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>Periodic</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-76.712729</westbc>
+				<eastbc Sync="TRUE">-76.479749</eastbc>
+				<northbc Sync="TRUE">39.447630</northbc>
+				<southbc Sync="TRUE">39.197655</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">1393746.133465</leftbc><rightbc Sync="TRUE">1459256.738710</rightbc><bottombc Sync="TRUE">557989.489861</bottombc><topbc Sync="TRUE">648751.000090</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>Hydfeat</themekey>
+				<themekey>waterbodies</themekey>
+				<themekey>lakes</themekey>
+				<themekey>reservoirs</themekey>
+				<themekey>rivers</themekey>
+				<themekey>ponds</themekey>
+				<themekey>streams</themekey>
+				<themekey>Baltimore City Planimetric</themekey>
+			</theme>
+			<place>
+				<placekey>Maryland</placekey>
+				<placekey>Baltimore</placekey>
+				<placekey>Baltimore City</placekey>
+				<placekey>USA</placekey>
+				<placekey>City of Baltimore</placekey>
+			</place>
+		</keywords>
+		<accconst>License agreement required for use of data. See distribution contact information.</accconst>
+		<useconst>Every reasonable effort has been made to ensure the accuracy of these data. The City of Baltimore, Maryland makes no representations nor warranties, either express of implied, regarding the accuracy of this information or its suitability for any particular purpose whatsoever. The data is licensed "as is" and the City of Baltimore will not be liable for its use or misuse by any party. Reliance of these data is at the risk of the user.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Jude Deshields</cntper>
+					<cntorg>City of Baltimore Department of Public Works, Bureau of Water and Wastewater</cntorg>
+				</cntperp>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>RM 314 Abel Wolman Building</address>
+					<address>200 N. Holliday St.</address>
+					<city>Baltimore</city>
+					<state>MD</state>
+					<postal>21202</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>410-396-1317</cntvoice>
+				<cntemail>jude.deshields@baltimorecity.gov</cntemail>
+				<hours>M-F 8am- 5pm</hours>
+			</cntinfo>
+		</ptcontac>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.3000</native>
+		<natvform Sync="TRUE">Personal GeoDatabase Feature Class</natvform></idinfo>
+	<dataqual>
+		<attracc>
+		</attracc>
+		<logic>This data was tested for validity, physical and logical consistency and general cleanliness.</logic>
+		<complete>All features included in the database design that were visible on the Spring 2008 aerial photography were captured and validated against the orthoimagery for completeness.</complete>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>City of Baltimore Department of Public Works, Bureau of Water and Wastewater</origin>
+						<geoform>vector digital data</geoform>
+					</citeinfo>
+				</srccite>
+			</srcinfo>
+			<procstep>
+				<procdesc>Planimetric and topographic features were compiled from aerial photography using softcopy photogrammetric workstations.
+
+Features were updated from prior photogrammetric base map and new features were compiled.  All features were reviewed and updated on a per stereomodel basis.  Change detection was completed by reviewing older planimetric data in comparison with the updated orthoimagery.  This was used to focus the updates.  All data was delivered in ESRI geodatabase format using an updated and enhanced data base design.  Prior to performing the updates data was migrated from the existing geodatabase structure into the new format.  Exception reports were produced and data was modified to adhere to the new design.  The migrated data was provided to Sanborn for updating.  It was translated into a format compatiable with ZI imaging workstations.  Updates were performed and data was then translated to ESRI geodatabase format.  Custom validation reports were developed and run using ESRI?s PLTS for quality control.  Data was QCed using the orthoimagery as a backdrop.  Based on the QC process edits were performed.  After final acceptance all data was appended into a seamless geodatabase.  The following features were included in the update process.
+
+Paved Rd                                                                                                             
+Curb Cut                                                                                                    
+Paved Driveway                                                                                                 
+Paved Alley                         
+Paved and Unpaved Median                                                                             
+Paved Parking                                                                                                       
+All road centerline ( Ex. Paved and Unpaved 
+roads, paved alleys, bridges and tunnels)                                                              
+Building, &gt;100 SF                                                                                                  
+Hydrography (Streams, ditches, lakes, ponds, harbors)                                           
+Railroad (Heavy, light, and subway)                                                                      
+Tunnel (road, rail, and pedestrain)                                                                             
+Bridge (road, rail, and pedestraian)                                                                           
+Hydrographic centreline (streams and ditches improved
+and unimproved as visible, approx 5' wide- incl. "hidden"
+through "culverts" for full connectivity                                                                     
+Retaining Wall (including portals and abutements                                                     
+Wooded/Brush areas- as defined by canopy
+Hydrographic Structures (piers, bulkheads, sea walls)
+Headwall/Ednwall Structures
+Dam" footprint: (including spillway)
+Bank improvements (riprap, gabion, paved)
+Storage Tanks, silos and water towers
+Power plants and substations
+Structures under constrution or demolition(ruins) evident by visible foundation or walls
+Areas of distrubance (construction sites without visible foundation or walls
+Street light base (include type if visible in photo)
+Traffic Signal (signal head only - no directionality wires, or poles)
+Traffic signal pole base (poles associated with and or use in support of Traffic Signal Heads)
+Screening/noise wall
+Party Walls</procdesc>
+				<srcused>aerial photography</srcused>
+				<procdate>3/2008- 8/2009</procdate>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>Sanborn Map Company</cntorg>
+						</cntorgp>
+						<cntvoice>719-593-0093</cntvoice>
+						<cntfax>719-528-5093</cntfax>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\Documents and Settings\kate.sontag\Desktop\Metadata081109\FINAL\Planimetric\Hydfeat.xml</srcused><date Sync="TRUE">20090823</date><time Sync="TRUE">09393300</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">\\Balt-gis01-srv\geodev\Data_Development\DPW PlanTopo\2009\PlanTopo\BaciPlan_Merge.mdb</srcused><procdate Sync="TRUE">20091120</procdate><proctime Sync="TRUE">13031800</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">N:\Data_Development\DPW PlanTopo\2009\New to M\water</srcused><procdate Sync="TRUE">20091123</procdate><proctime Sync="TRUE">18262300</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">M:\geodata\shape\Hydrography\water</srcused><procdate Sync="TRUE">20100907</procdate><proctime Sync="TRUE">10270000</proctime></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf><esriterm Name="BaltimoreWater"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom code="4" Sync="TRUE"></efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<spref>
+		<horizsys>
+			<planar>
+				<planci>
+					<plance Sync="TRUE">coordinate pair</plance>
+					<coordrep>
+						<absres Sync="TRUE">0.000128</absres>
+						<ordres Sync="TRUE">0.000128</ordres>
+					</coordrep>
+					<plandu Sync="TRUE">survey feet</plandu>
+				</planci>
+			</planar>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1983</horizdn>
+				<ellips Sync="TRUE">Geodetic Reference System 80</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257222</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn><projcsn Sync="TRUE">NAD_1983_StatePlane_Maryland_FIPS_1900_Feet</projcsn></cordsysn></horizsys>
+		<vertdef>
+			<altsys>
+				<altres Sync="TRUE">0.000100</altres>
+				<altenc Sync="TRUE">Explicit elevation coordinate included with horizontal coordinates</altenc>
+			</altsys>
+		</vertdef>
+	</spref>
+	<eainfo>
+		<detailed Name="BaltimoreWater">
+			<enttyp>
+				<enttypl Sync="TRUE">BaltimoreWater</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr>
+				<attrlabl>SHAPE_Area</attrlabl>
+				<attrdef>Area of feature in internal units squared.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>NAME</attrlabl>
+				<attalias Sync="TRUE">NAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">30</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr>
+			<attr>
+				<attrlabl>OBJECTID</attrlabl>
+				<attrdef>Internal feature number.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">OBJECTID</attalias><attrtype Sync="TRUE">Integer</attrtype><attwidth Sync="TRUE">9</attwidth><atprecis Sync="TRUE">9</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv></attr><attr>
+				<attrlabl>SHAPE</attrlabl>
+				<attrdef>Feature geometry.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">TAG</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">15</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>TAG</attrlabl>
+				<attalias Sync="TRUE">TYPE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">3</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>TYPE</attrlabl>
+				<attalias Sync="TRUE">SUBTYPE</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">6</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr>
+				<attrlabl>SUBTYPE</attrlabl>
+				<attalias Sync="TRUE">SYMBOL</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">Shape_Area</attrlabl><attalias Sync="TRUE">Shape_Leng</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr><attr><attrlabl Sync="TRUE">WATER</attrlabl><attalias Sync="TRUE">WATER</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">1</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">Shape_Le_1</attrlabl><attalias Sync="TRUE">Shape_Le_1</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr>
+				<attrlabl>SYMBOL</attrlabl>
+				<attalias Sync="TRUE">Shape_Area</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale><attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef><attrdefs Sync="TRUE">Esri</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr>
+		</detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>City of Baltimore, Mayor's Office of Information Technology, Enterprise Geographic Information Services</cntorg>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>362 City Hall, N. Holliday Street</address>
+					<city>Baltimore</city>
+					<state>MD</state>
+					<postal>21202</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>410-396-4106</cntvoice>
+				<cntfax>410-625-8707</cntfax>
+				<cntemail>gis@baltimorecity.gov</cntemail>
+				<hours>M-F 8am -5pm</hours>
+			</cntinfo>
+		</distrib>
+		<resdesc>Downloadable Data</resdesc>
+		<distliab>Every reasonable effort has been made to ensure the accuracy of these data. The City of Baltimore, Maryland makes no representations nor warranties, either expressed or implied, regarding the accuracy of this information or its suitability for any particular purpose whatsoever. The data is licensed "as is" and the City of Baltimore will not be liable for its use or misuse by any party. Reliance of these data is at the risk of the user.</distliab>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20091120</metd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>City of Baltimore Department of Public Works, GIS Center</cntorg>
+					<cntper>Jude DeShields</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>physical address</addrtype>
+					<address>Rm 314 Abel Wolman</address>
+					<address>200 N. Holliday Street</address>
+					<city>Baltimore</city>
+					<state>MD</state>
+					<postal>21202</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>410-396-1317</cntvoice>
+				<hours>M-F 8am- 5pm</hours>
+			</cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta></metainfo>
+	<Esri><CreaDate>20160424</CreaDate><CreaTime>18322700</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20160503</SyncDate><SyncTime>18172400</SyncTime><ModDate>20160503</ModDate><ModTime>18172400</ModTime><DataProperties><lineage><Process Name="Dissolve_4" ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\Dissolve" Date="20090906" Time="093200">Dissolve Hydrofeature M:\2008\01081865\GIS\11_12_PlanTopo\Merged_Areas\BaCiPlan_Merge.mdb\PolygonFeatures\Hydrofeature_Dissolve TAG;TYPE;SUBTYPE;SOURCE;SRCDATE;SYMBOL;NAME # SINGLE_PART</Process><Process ToolSource="c:\program files (x86)\arcgis\desktop10.2\ArcToolbox\Toolboxes\Data Management Tools.tbx\Project" Date="20160424" Time="183228">Project "D:\Documents\GIS\English Ivy Habitat Model\Data\Working_Data.gdb\BaltimoreWater" "D:\Documents\GIS\English Ivy Habitat Model\Data\Working_Data.gdb\BaltimoreWater_projected" PROJCS['NAD_1983_2011_UTM_Zone_18N',GEOGCS['GCS_NAD_1983_2011',DATUM['D_NAD_1983_2011',SPHEROID['GRS_1980',6378137.0,298.257222101]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]],PROJECTION['Transverse_Mercator'],PARAMETER['False_Easting',500000.0],PARAMETER['False_Northing',0.0],PARAMETER['Central_Meridian',-75.0],PARAMETER['Scale_Factor',0.9996],PARAMETER['Latitude_Of_Origin',0.0],UNIT['Meter',1.0]] 'WGS_1984_(ITRF00)_To_NAD_1983 + WGS_1984_(ITRF08)_To_NAD_1983_2011' PROJCS['NAD_1983_StatePlane_Maryland_FIPS_1900_Feet',GEOGCS['GCS_North_American_1983',DATUM['D_North_American_1983',SPHEROID['GRS_1980',6378137.0,298.257222101]],PRIMEM['Greenwich',0.0],UNIT['Degree',0.0174532925199433]],PROJECTION['Lambert_Conformal_Conic'],PARAMETER['False_Easting',1312333.333333333],PARAMETER['False_Northing',0.0],PARAMETER['Central_Meridian',-77.0],PARAMETER['Standard_Parallel_1',38.3],PARAMETER['Standard_Parallel_2',39.45],PARAMETER['Latitude_Of_Origin',37.66666666666666],UNIT['Foot_US',0.3048006096012192]],VERTCS['NAVD_1988',VDATUM['North_American_Vertical_Datum_1988'],PARAMETER['Vertical_Shift',0.0],PARAMETER['Direction',1.0],UNIT['Meter',1.0]]</Process></lineage><itemProps><itemLocation><linkage Sync="TRUE">file://\\BRAD-PC\D\Documents\scripts\g_Testing\English-Ivy-Ideal-Habitat-Suitability-Analysis\Data\Sources\BaltimoreWater.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation><itemName Sync="TRUE">BaltimoreWater</itemName><imsContentType Sync="TRUE">002</imsContentType><itemSize Sync="TRUE">0.000</itemSize></itemProps><copyHistory><copy source="D:\Documents\GIS\Data\StreetLuminosity\water" dest="\\BRAD-PC\D\Documents\GIS\English Ivy Habitat Model\Data\Sources\water" date="20160423" time="15231500"></copy></copyHistory><coordRef><type Sync="TRUE">Projected</type><geogcsn Sync="TRUE">GCS_NAD_1983_2011</geogcsn><csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits><projcsn Sync="TRUE">NAD_1983_2011_UTM_Zone_18N</projcsn><peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.1'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_2011_UTM_Zone_18N&amp;quot;,GEOGCS[&amp;quot;GCS_NAD_1983_2011&amp;quot;,DATUM[&amp;quot;D_NAD_1983_2011&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-75.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;ESRI&amp;quot;,102387]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;102387&lt;/WKID&gt;&lt;LatestWKID&gt;102387&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml></coordRef></DataProperties><ArcGISstyle>FGDC CSDGM Metadata</ArcGISstyle><ArcGISFormat>1.0</ArcGISFormat></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.2.0.3348</envirDesc><dataLang><languageCode Sync="TRUE" value="eng"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></dataLang><idCitation><resTitle Sync="TRUE">BaltimoreWater</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">1393746.133465</westBL><eastBL Sync="TRUE">1459256.73871</eastBL><northBL Sync="TRUE">648751.00009</northBL><southBL Sync="TRUE">557989.489861</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-76.712729</westBL><eastBL Sync="TRUE">-76.479749</eastBL><northBL Sync="TRUE">39.44763</northBL><southBL Sync="TRUE">39.197655</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="eng"></languageCode><countryCode value="USA" Sync="TRUE"></countryCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\Balt-gis01-srv\geodev\Data_Distribution\Web_Data\shp\water</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc></distorTran><distorFormat><formatName Sync="TRUE">Personal GeoDatabase Feature Class</formatName></distorFormat></distributor><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">0.000</transSize></distTranOps></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE" code="102387">NAD_1983_StatePlane_Maryland_FIPS_1900_Feet</identCode><idCodeSpace Sync="TRUE">ESRI</idCodeSpace><idVersion Sync="TRUE">10.2.0</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><geometObjs Name="BaltimoreWater"><geoObjTyp><GeoObjTypCd value="002" Sync="TRUE"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs><topLvl><TopoLevCd value="001" Sync="TRUE"></TopoLevCd></topLvl></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20160503</mdDateSt></metadata>
