@@ -1,4 +1,5 @@
 import os
+import time
 import json
 import pickle
 import itertools
@@ -65,6 +66,7 @@ def reproject():
 def distance(fc):
 	output = os.path.join(arcpy.env.workspace, '{}_dist'.format(fc))
 	distance = EucDistance(fc, "#", 63.9370612000003)
+	# CopyRaster instead of distance.save() to set correct raster properties
 	arcpy.CopyRaster_management(distance, output, '', '#', '', 'NONE',
 		'NONE', '32_BIT_UNSIGNED')
 
@@ -136,4 +138,6 @@ def main():
 	arcpy.CheckInExtension('spatial')
 
 if __name__ == '__main__':
+	start_time = time.time()
 	main()
+	print '\nAnalysis Completed in {} seconds'.format(time.time() - start_time)

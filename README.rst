@@ -30,6 +30,11 @@ Software used:
 * QGIS Desktop 2.8.1
 * Python 2.7
 
+The data management and analysis processess have been completly automated
+using Python and are typically completed in **less than sixty seconds.**
+
+`Details about the scripts can be found here <https://github.com/bradhamson/English-Ivy-Ideal-Habitat-Suitability-Analysis/tree/master/scripts>`_
+
 Data was collected from a variety of sources to create the necessary surfaces to perform this analysis. These include
 the MD state government, USGS, and the Baltimore city government. 
 
