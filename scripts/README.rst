@@ -16,8 +16,6 @@ Description
 This site suitability analysis has been completely automated using
 the above scripts and resources.
 
-The entire data management and analysis operation are typically completed in less than sixty seconds.
-
 The ``reproject.py`` script was initially used to reproject all of the 
 source data to CRS: 102387. This is no longer needed since the 
 ``suitability_analysis.py`` script includes this functionality.

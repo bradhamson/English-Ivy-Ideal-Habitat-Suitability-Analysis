@@ -10,7 +10,7 @@ from arcpy.sa import (EucDistance,
 	RemapValue, 
 	Reclassify,
 	FuzzyMembership,
-	FuzzyNear,
+	FuzzyLinear,
 	FuzzySmall,
 	FuzzyOverlay)
 
