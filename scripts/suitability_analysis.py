@@ -1,6 +1,7 @@
 import os
 import json
 import pickle
+import itertools
 import arcpy
 from arcpy.sa import (EucDistance, 
 	Aspect, 
@@ -13,10 +14,9 @@ from arcpy.sa import (EucDistance,
 	FuzzyOverlay)
 
 def list_objects():
-	objects = arcpy.ListFeatureClasses()
+	vectors = arcpy.ListFeatureClasses()
 	rasters = arcpy.ListRasters()
-	for raster in rasters:
-		objects.append(raster)
+	objects = itertools.chain(vectors, rasters)
 	return objects
 
 def switch_workspace(src, *args):
