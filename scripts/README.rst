@@ -21,7 +21,7 @@ source data to CRS: 102387. This is no longer needed since the
 ``suitability_analysis.py`` script includes this functionality.
 
 The ``suitability_analysis.py`` script has been developed to automate
-the data management and analysis portions of this project. Reclassification is performed by reading from the ``remap.json`` file and feeding the values into ESRI's ``Remap`` objects instead of using their infotable methods. Fuzzy Membership algorithms are stored as pickled objects in the ``algos.p`` file and used in a similar manner to apply Fuzzy Membership to the raster datasets. Make sure to keep this directory structure when running the analysis.
+the data management and analysis portions of this project. Reclassification is performed by reading from the ``remap.json`` file and feeding the values into ESRI's ``Remap`` objects instead of using their infotable methods. Make sure to keep this directory structure when running the analysis.
 
 Source data is provided as shapefiles in the ``Data/Sources`` directory.
 

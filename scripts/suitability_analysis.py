@@ -1,7 +1,6 @@
 import os
 import time
 import json
-import pickle
 import itertools
 import arcpy
 from arcpy.sa import (EucDistance, 
@@ -97,15 +96,14 @@ def reclassify(fcs):
 				rc.save(output)
 
 def add_members(fcs):
-	algos = pickle.load(open('pickles/algos.p', 'rb'))
 	for fc in fcs:
 		if 'Streets' in fc:
 			output = os.path.join(arcpy.env.workspace, '{}_fuzzy'.format(fc))
-			fm = FuzzyMembership(fc, algos['linear'])
+			fm = FuzzyMembership(fc, FuzzyLinear(4, 5))
 			fm.save(output)
 		else:
 			output = os.path.join(arcpy.env.workspace, '{}_fuzzy'.format(fc))
-			fm = FuzzyMembership(fc, algos['small'])
+			fm = FuzzyMembership(fc, FuzzySmall(3, 5))
 			fm.save(output)
 	members = [m for m in arcpy.ListRasters() if m.endswith('_fuzzy')]
 	return members
